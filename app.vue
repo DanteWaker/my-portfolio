@@ -1,10 +1,8 @@
 <template>
   <main class="relative bg-customBackground-400 text-customPrimary-400">
-    <section id="title-section" class="h-[100vh] w-full flex justify-center">
+    <section id="title-section" class="h-[100vh] w-full flex justify-center pt-20">
       <Header />
       <Sidebar />
-
-      asdasdsad
     </section>
   </main>
 </template>
