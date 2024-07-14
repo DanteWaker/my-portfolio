@@ -36,8 +36,8 @@ const workingIcons: TWorkingIcon[] = [
     <section class="h-[100vh]">
       <div class="flex flex-col justify-center items-start font-semibold h-[75vh] p-4">
         <p class="text-xl text-center">Opa! Me chamo</p>
-        <h1 class="text-6xl text-center font-black text-start">Denner Nascimento</h1>
-        <p class="text-lg text-center font-normal">e sou um Desenvolvedor de Software</p>
+        <h1 class="text-5xl text-center font-black text-start">Denner Nascimento</h1>
+        <p class="text-md text-center font-normal">e sou um Desenvolvedor de Software</p>
         <Sidebar />
 
       </div>
