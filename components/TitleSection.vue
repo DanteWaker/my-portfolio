@@ -34,14 +34,14 @@ const workingIcons: TWorkingIcon[] = [
 <template>
   <section class="flex flex-col">
     <section class="h-[100vh]">
-      <div class="flex flex-col justify-center items-start font-semibold h-[85vh] p-8">
+      <div class="flex flex-col justify-center items-start font-semibold h-[75vh] p-4">
         <p class="text-xl text-center">Opa! Me chamo</p>
         <h1 class="text-6xl text-center font-black text-start">Denner Nascimento</h1>
         <p class="text-lg text-center font-normal">e sou um Desenvolvedor de Software</p>
         <Sidebar />
 
       </div>
-      <div class=" flex flex-col justify-start items-center font-light h-[15vh] TEXT p-8 tracking-widest">
+      <div class=" flex flex-col justify-start items-center font-light h-[25vh] TEXT p-8 tracking-widest">
         <p class="text-md text-center animate-bounce">VEJA MEU TRABALHO</p>
         <div class="w-[1px] h-6 bg-customPrimary-400/50 mt-3 animate-bounce" />
       </div>
