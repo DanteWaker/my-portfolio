@@ -18,6 +18,14 @@ export default <Partial<Config>>{
       '2kDesktop': '1536px',
     },
     extend: {
+      animation: {
+        'spin-slow': 'scroll 20s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '100%': { transform: 'translateX(-50%)' },
+        }
+      },
       colors: {
         'customPrimary': {
           200: '#C5C5C5',
