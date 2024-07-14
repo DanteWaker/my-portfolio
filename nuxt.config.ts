@@ -18,6 +18,21 @@ export default defineNuxtConfig({
     }
   },
   modules: ["@nuxt/ui", "@nuxt/eslint", 'nuxt-icon', "@nuxt/fonts"],
+  fonts: {
+    defaults: {
+      weights: [100,200,300,400,500,600,700,800,900,950],
+      styles: ['normal', 'italic'],
+      subsets: [
+        'cyrillic-ext',
+        'cyrillic',
+        'greek-ext',
+        'greek',
+        'vietnamese',
+        'latin-ext',
+        'latin',
+      ]
+    },
+  },
   eslint: {
     checker: true,
     config: {

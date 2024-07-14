@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^1.0.0-beta.2",
     "@iconify-json/mdi": "^1.1.67",
     "@iconify/json": "^2.2.225",
     "@nuxt/eslint": "^0.3.13",

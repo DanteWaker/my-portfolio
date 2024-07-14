@@ -8,7 +8,7 @@ const props = defineProps(['icon'])
 <template>
   <li class="flex justify-center items-center">
     <UButton
-      class="w-[2.4rem] h-[2.4rem] transition-all duration-300 flex justify-center items-center hover:w-[4rem] hover:h-[4rem]">
+      class="w-[3.2rem] h-[3.2rem] shadow-none transition-all duration-300 flex justify-center items-center hover:w-[4rem] hover:h-[4rem]">
       <Icon :name="props.icon" class="text-customPrimary-400 w-full h-full hover:w-[4rem] hover:h-[4rem]" />
     </UButton>
   </li>
