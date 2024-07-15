@@ -17,7 +17,10 @@ export default defineNuxtConfig({
       mergeProps: true
     }
   },
-  modules: ["@nuxt/ui", "@nuxt/eslint", 'nuxt-icon', "@nuxt/fonts"],
+  modules: ["@nuxt/ui", "@nuxt/eslint", 'nuxt-icon', "@nuxt/fonts", "@nuxt/image"],
+  image: {
+    provider: process.env.NUXT_PROVIDER,
+  },
   fonts: {
     defaults: {
       weights: [100,200,300,400,500,600,700,800,900,950],
