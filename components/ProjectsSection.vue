@@ -1,74 +1,108 @@
 <script setup lang="ts">
-type TWorkingIcon = {
-  name: string
-}
-
 useServerSeoMeta({
-  title: 'Portfólio | Denner Nascimento',
-  ogTitle: 'Portfólio | Denner Nascimento',
-  description: 'O fantástico portfólio de Denner Nascimento',
-  ogDescription: 'O fantástico portfólio de Denner Nascimento',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
-})
+	title: 'Portfólio | Denner Nascimento',
+	ogTitle: 'Portfólio | Denner Nascimento',
+	description: 'O fantástico portfólio de Denner Nascimento',
+	ogDescription: 'O fantástico portfólio de Denner Nascimento',
+	ogImage: 'https://example.com/image.png',
+	twitterCard: 'summary_large_image',
+});
 
 const fakeList = [
-  {
-    name: "Sua Formatura",
-    mobileImage: "/WebsitesImages/Suaformatura/SuaFormaturaDashboardMobile.png",
-    desktopImage: "/WebsitesImages/Suaformatura/SuaFormaturaDashboardDesktop.png",
-    description: "A Sua Formatura é o lugar ideal para organizar a sua formatura com segurança, praticidade e inteligência. Com o nosso aplicativo, você pode planejar cada evento conforme o desejo da sua turma, utilizando diversas estratégias para garantir a melhor formatura gastando menos. Arrecade dinheiro de forma segura e transparente, aceitando pagamentos via boleto, PIX ou cartão. Além disso, com a nossa Formatura Garantida, você tem a segurança de receber o seu dinheiro de volta em caso de qualquer problema. Organize a sua formatura com a Sua Formatura e faça desse momento uma experiência inesquecível.",
-    technologies: ["React", "Material-UI", "ImmutableJS", "Redux", "JavaScript"],
-    siteURL: "https://suaformatura.com"
-  },
-  {
-    name: "Calculadora das milhas",
-    mobileImage: "/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasMobile.png",
-    desktopImage: "/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasDesktop.png",
-    description: "Calculadora de milhas aéreas simples feita para o gestor de milhas aéreas Caio Nascimento.",
-    technologies: ["NextJS", "ReactJS", "Tailwind", "Zustand", "Typescript"],
-    siteURL: "https://calculadoradasmilhas.com"
-  },
-]
+	{
+		name: 'Sua Formatura',
+		mobileImage: '/WebsitesImages/Suaformatura/SuaFormaturaDashboardMobile.png',
+		desktopImage: '/WebsitesImages/Suaformatura/SuaFormaturaDashboardDesktop.png',
+		description: 'A Sua Formatura é o lugar ideal para organizar a sua formatura com segurança, praticidade e inteligência. Com o nosso aplicativo, você pode planejar cada evento conforme o desejo da sua turma, utilizando diversas estratégias para garantir a melhor formatura gastando menos. Arrecade dinheiro de forma segura e transparente, aceitando pagamentos via boleto, PIX ou cartão. Além disso, com a nossa Formatura Garantida, você tem a segurança de receber o seu dinheiro de volta em caso de qualquer problema. Organize a sua formatura com a Sua Formatura e faça desse momento uma experiência inesquecível.',
+		technologies: ['React', 'Material-UI', 'ImmutableJS', 'Redux', 'JavaScript'],
+		siteURL: 'https://suaformatura.com',
+	},
+	{
+		name: 'Calculadora das milhas',
+		mobileImage: '/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasMobile.png',
+		desktopImage: '/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasDesktop.png',
+		description: 'Calculadora de milhas aéreas simples feita para o gestor de milhas aéreas Caio Nascimento.',
+		technologies: ['NextJS', 'ReactJS', 'Tailwind', 'Zustand', 'Typescript'],
+		siteURL: 'https://calculadoradasmilhas.com',
+	},
+];
 </script>
 
 <template>
-  <section class="my-16 w-full flex flex-col justify-center items-center">
-    <div class="flex justify-center items-center mb-12">
-      <h1 class="text-4xl font-bold">Projetos</h1>
-    </div>
-    <div class="w-full flex flex-col justify-center items-center mb-20" v-for="(project) in fakeList">
-      <div class="relative mb-6">
-        <div>
-          <h2 class="w-full text-center text-2xl mb-4">{{ project.name }}</h2>
-        </div>
-        <div
-          class="border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[384px] h-[216px] rounded-xl shadow-lg">
-          <NuxtImg class="w-full h-full" format="svg" quality="80" :src="project.desktopImage" loading="lazy"
-            fit="fill" />
-        </div>
-        <div
-          class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[70px] h-[150px] rounded-xl shadow-lg">
-          <NuxtImg class="w-full h-full" format="svg" quality="80" :src="project.mobileImage" loading="lazy"
-            fit="fill" />
-        </div>
-      </div>
-      <div class="w-full p-4">
-        <p class="mb-4 max-h-36 overflow-scroll">{{ project.description }}</p>
+	<section class="my-16 w-full flex flex-col justify-center items-center">
+		<div class="flex justify-center items-center mb-12">
+			<h1 class="text-4xl font-bold">
+				Projetos
+			</h1>
+		</div>
+		<div
+			v-for="(project, index) in fakeList"
+			:key="index"
+			class="w-full flex flex-col justify-center items-center mb-20"
+		>
+			<div class="relative mb-6">
+				<div>
+					<h2 class="w-full text-center text-2xl mb-4">
+						{{ project.name }}
+					</h2>
+				</div>
+				<div
+					class="border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[384px] h-[216px] rounded-xl shadow-lg"
+				>
+					<NuxtImg
+						class="w-full h-full"
+						format="svg"
+						quality="80"
+						:src="project.desktopImage"
+						loading="lazy"
+						fit="fill"
+					/>
+				</div>
+				<div
+					class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[70px] h-[150px] rounded-xl shadow-lg"
+				>
+					<NuxtImg
+						class="w-full h-full"
+						format="svg"
+						quality="80"
+						:src="project.mobileImage"
+						loading="lazy"
+						fit="fill"
+					/>
+				</div>
+			</div>
+			<div class="w-full p-4">
+				<p class="mb-4 max-h-36 overflow-scroll">
+					{{ project.description }}
+				</p>
 
-        <div class="flex w-full justify-around items-center mb-8  gap-4 flex-wrap">
-          <span class="font-bold text-purple-600 uppercase" v-for="(tech) in project.technologies">{{ tech }}</span>
-        </div>
-        <ULink class="w-full" :to="project.siteURL" target="_blank">
-          <UButton label="VER PROJETO" variant="solid" color="green"
-            class="h-12 w-full flex justify-center items-center">
-            <template #trailing>
-              <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
-            </template>
-          </UButton>
-        </ULink>
-      </div>
-    </div>
-
-  </section>
+				<div class="flex w-full justify-around items-center mb-8  gap-4 flex-wrap">
+					<span
+						v-for="(tech, indexChild) in project.technologies"
+						:key="indexChild"
+						class="font-bold text-purple-600 uppercase"
+					>{{ tech }}</span>
+				</div>
+				<ULink
+					class="w-full"
+					:to="project.siteURL"
+					target="_blank"
+				>
+					<UButton
+						label="VER PROJETO"
+						variant="solid"
+						color="green"
+						class="h-12 w-full flex justify-center items-center"
+					>
+						<template #trailing>
+							<UIcon
+								name="i-heroicons-arrow-right-20-solid"
+								class="w-5 h-5"
+							/>
+						</template>
+					</UButton>
+				</ULink>
+			</div>
+		</div>
+	</section>
 </template>
