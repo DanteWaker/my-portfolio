@@ -23,6 +23,8 @@ useServerSeoMeta({
 			<ProfileSection />
 
 			<ContactSection />
+
+			<FooterSection />
 		</section>
 	</main>
 </template>
