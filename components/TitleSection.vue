@@ -1,60 +1,89 @@
 <script setup lang="ts">
-type TWorkingIcon = {
-	name: string;
-};
-const workingIcons: TWorkingIcon[] = [
-	{ name: 'devicon:csharp' },
-	{ name: 'skill-icons:dotnet' },
-	{ name: 'skill-icons:react-dark' },
-	{ name: 'devicon:nextjs-wordmark' },
-	{ name: 'devicon:vuejs' },
-	{ name: 'devicon:nuxtjs' },
-	{ name: 'skill-icons:typescript' },
-	{ name: 'skill-icons:javascript' },
-	{ name: 'logos:nodejs-icon' },
-	{ name: 'skill-icons:sass' },
-	{ name: 'devicon:git' },
-	{ name: 'devicon:tailwindcss' },
-	{ name: 'logos:docker-icon' },
-	{ name: 'logos:material-ui' },
-	{ name: 'devicon:vscode' },
-	{ name: 'skill-icons:redux' },
-	{ name: 'devicon:html5-wordmark' },
-	{ name: 'logos:css-3' },
-	{ name: 'devicon:bitbucket-wordmark' },
-	{ name: 'devicon:nestjs' },
-	{ name: 'devicon:mysql-wordmark' },
-	{ name: 'devicon:postgresql-wordmark' },
-	{ name: 'devicon:mongodb-wordmark' },
-	{ name: 'devicon:swagger' },
-];
+// type TWorkingIcon = {
+// 	name: string;
+// };
+// const workingIcons: TWorkingIcon[] = [
+// 	{ name: 'devicon:csharp' },
+// 	{ name: 'skill-icons:dotnet' },
+// 	{ name: 'skill-icons:react-dark' },
+// 	{ name: 'devicon:nextjs-wordmark' },
+// 	{ name: 'devicon:vuejs' },
+// 	{ name: 'devicon:nuxtjs' },
+// 	{ name: 'skill-icons:typescript' },
+// 	{ name: 'skill-icons:javascript' },
+// 	{ name: 'logos:nodejs-icon' },
+// 	{ name: 'skill-icons:sass' },
+// 	{ name: 'devicon:git' },
+// 	{ name: 'devicon:tailwindcss' },
+// 	{ name: 'logos:docker-icon' },
+// 	{ name: 'logos:material-ui' },
+// 	{ name: 'devicon:vscode' },
+// 	{ name: 'skill-icons:redux' },
+// 	{ name: 'devicon:html5-wordmark' },
+// 	{ name: 'logos:css-3' },
+// 	{ name: 'devicon:bitbucket-wordmark' },
+// 	{ name: 'devicon:nestjs' },
+// 	{ name: 'devicon:mysql-wordmark' },
+// 	{ name: 'devicon:postgresql-wordmark' },
+// 	{ name: 'devicon:mongodb-wordmark' },
+// 	{ name: 'devicon:swagger' },
+// ];
 </script>
 
 <template>
 	<section class="flex flex-col">
-		<section class="h-[100vh]">
-			<div class="flex flex-col justify-center items-start font-semibold h-[75vh] p-4">
-				<div class="flex flex-col justify-center items-start font-semibold">
-					<p class="text-xl text-center">
-						Opa! Me chamo
-					</p>
-					<h1 class="text-5xl text-center font-black text-start">
+		<section class="mt-20">
+			<div class="flex justify-around items-center font-semibold p-4">
+				<div class="flex flex-col justify-center items-start font-normal laptop:font-[150%] laptop:mr-8">
+					<p class="text-xl text-center font-light laptop:text-5xl text-customPrimary-400/50">
 						Denner Nascimento
+					</p>
+					<h1 class="text-5xl font-black text-start laptop:text-[6rem]">
+						Desenvolvedor de Software
 					</h1>
 					<p class="text-lg text-center font-normal">
-						e sou um Desenvolvedor de Software
+						Desenvolvimento de software com tecnologias modernas e práticas ágeis
 					</p>
-					<Sidebar />
+
+					<div class="w-full">
+						<div class="w-full rounded-full p-2 bg-customBackground-400 mt-4">
+							<ul class="space-x-2 w-[full] h-[3rem] flex justify-start items-center gap-12">
+								<ButtonIcon
+									icon="bi:github"
+									text="Github"
+								/>
+
+								<ButtonIcon
+									icon="bi:linkedin"
+									text="Linkedin"
+								/>
+								<ButtonIcon
+									icon="pepicons-pop:file"
+									text="Currículo"
+								/>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="w-[60%] m-12">
+					<NuxtImg
+						class="w-full h-full rounded-3xl"
+						format="svg"
+						quality="80"
+						src="/foto_perfil.png"
+						loading="lazy"
+						fit="fill"
+					/>
 				</div>
 			</div>
-			<div class=" flex flex-col justify-start items-center font-light h-[25vh] TEXT p-8 tracking-widest">
+			<div class=" flex flex-col justify-start items-center font-light p-8 tracking-widest">
 				<p class="text-md text-center animate-bounce">
 					VEJA MEU TRABALHO
 				</p>
 				<div class="w-[1px] h-6 bg-customPrimary-400/50 mt-3 animate-bounce" />
 			</div>
 		</section>
-		<section
+		<!-- <section
 			id="tools"
 			class="flex w-full"
 		>
@@ -82,6 +111,6 @@ const workingIcons: TWorkingIcon[] = [
 					/>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</section>
 </template>

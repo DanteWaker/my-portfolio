@@ -1,23 +1,22 @@
 <script setup lang="ts">
 const props = defineProps({
 	icon: { type: String, default: '' },
-	aditionalClasses: String,
-	isPrimary: Boolean,
+	text: { type: String, default: '' },
 });
 </script>
 
 <template>
-	<li class="flex justify-center items-center">
+	<li class="flex justify-center items-center mt-12">
 		<button
 			:onClick="() => console.log('Clicou')"
-			:class="`${props.isPrimary ? 'w-[3.2rem] h-[3.2rem] hover:w-[4.4rem] hover:h-[4.4rem]' : 'w-[2rem] h-[2rem] hover:w-[3rem] hover:h-[3rem]'}
-      shadow-none transition-all duration-300 flex justify-center items-center border-none
-      hover:border-none active:border-none focus:border-none`"
+			class="flex justify-center items-center border-[2px] border-customPrimary-400/80 p-4 gap-4
+			min-w-[10rem] h-[4rem] rounded-3xl shadow-md"
 		>
 			<Icon
 				:name="props.icon"
-				:class="`w-full h-full hover:w-[4rem] hover:h-[4rem] ${props.aditionalClasses}`"
+				class="w-[2rem] h-[2rem]"
 			/>
+			<span class="uppercase text-lg">{{props.text}}</span>
 		</button>
 	</li>
 </template>

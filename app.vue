@@ -10,12 +10,12 @@ useServerSeoMeta({
 </script>
 
 <template>
-	<main class="relative bg-customBackground-400 text-customPrimary-400 overflow-hidden">
+	<main class="bg-customBackground-400 text-customPrimary-400 overflow-hidden flex flex-col items-center">
+		<Header />
 		<section
 			id="title-section"
-			class="w-full flex flex-col"
+			class="relative w-full flex flex-col max-w-[1280px]"
 		>
-			<Header />
 			<TitleSection />
 
 			<ProjectsSection />
@@ -25,6 +25,16 @@ useServerSeoMeta({
 			<ContactSection />
 
 			<FooterSection />
+
+			<button
+				:onClick="() => console.log('Clicou')"
+				class="fixed bottom-16 right-16 w-[5rem] h-[5rem] hover:w-[6rem] hover:h-[6rem] transition-all duration-300"
+			>
+				<Icon
+					name="logos:whatsapp-icon"
+					class="w-full h-full"
+				/>
+			</button>
 		</section>
 	</main>
 </template>
