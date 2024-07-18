@@ -6,10 +6,10 @@ const props = defineProps({
 </script>
 
 <template>
-	<li class="flex justify-center items-center mt-12">
+	<li class="flex justify-center items-center mb-2 w-full">
 		<button
 			:onClick="() => console.log('Clicou')"
-			class="flex justify-center items-center border-[2px] border-customPrimary-400/80 p-4 gap-4
+			class="flex justify-center items-center border-[2px] border-customPrimary-400/80 p-4 gap-4 w-full
 			min-w-[10rem] h-[4rem] rounded-3xl shadow-md"
 		>
 			<Icon

@@ -33,7 +33,10 @@
 <template>
 	<section class="flex flex-col">
 		<section class="mt-20">
-			<div class="flex justify-around items-center font-semibold p-4">
+			<div
+				class="flex justify-around items-center flex-col-reverse font-semibold p-4 pb-36 mb-16
+			laptop:flex-row"
+			>
 				<div class="flex flex-col justify-center items-start font-normal laptop:font-[150%] laptop:mr-8">
 					<p class="text-xl text-center font-light laptop:text-5xl text-customPrimary-400/50">
 						Denner Nascimento
@@ -41,13 +44,16 @@
 					<h1 class="text-5xl font-black text-start laptop:text-[6rem]">
 						Desenvolvedor de Software
 					</h1>
-					<p class="text-lg text-center font-normal">
+					<p class="text-lg text-start font-normal laptop:text-center">
 						Desenvolvimento de software com tecnologias modernas e práticas ágeis
 					</p>
 
 					<div class="w-full">
 						<div class="w-full rounded-full p-2 bg-customBackground-400 mt-4">
-							<ul class="space-x-2 w-[full] h-[3rem] flex justify-start items-center gap-12">
+							<ul
+								class="space-x-2 w-full h-[3rem] flex flex-col justify-start items-center
+							laptop:flex-row laptop:gap-12"
+							>
 								<ButtonIcon
 									icon="bi:github"
 									text="Github"
@@ -65,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="w-[60%] m-12">
+				<div class="m-8 laptop:w-[60%] laptop:m-12">
 					<NuxtImg
 						class="w-full h-full rounded-3xl"
 						format="svg"

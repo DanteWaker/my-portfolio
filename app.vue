@@ -28,7 +28,8 @@ useServerSeoMeta({
 
 			<button
 				:onClick="() => console.log('Clicou')"
-				class="fixed bottom-16 right-16 w-[5rem] h-[5rem] hover:w-[6rem] hover:h-[6rem] transition-all duration-300"
+				class="fixed transition-all duration-300 bottom-2 right-2 w-[4rem] h-[4rem]
+				laptop:bottom-16 laptop:right-16 laptop:w-[5rem] laptop:h-[5rem] laptop:hover:w-[6rem] laptop:hover:h-[6rem]"
 			>
 				<Icon
 					name="logos:whatsapp-icon"
