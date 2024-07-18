@@ -48,7 +48,7 @@
 						Desenvolvimento de software com tecnologias modernas e práticas ágeis
 					</p>
 
-					<div class="w-full">
+					<div class="w-full laptop:mt-12">
 						<div class="w-full rounded-full p-2 bg-customBackground-400 mt-4">
 							<ul
 								class="space-x-2 w-full h-[3rem] flex flex-col justify-start items-center
