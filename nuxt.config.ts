@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  typescript: {
+    typeCheck: true
+  },
   css: ['~/assets/css/main.css'],
   app: {
     head: {
@@ -18,6 +21,7 @@ export default defineNuxtConfig({
     }
   },
   modules: ["@nuxt/ui", "@nuxt/eslint", 'nuxt-icon', "@nuxt/fonts", "@nuxt/image"],
+
   image: {
     provider: process.env.NUXT_PROVIDER,
   },
@@ -37,7 +41,9 @@ export default defineNuxtConfig({
     },
   },
   eslint: {
-    checker: true,
+    checker: {
+      configType: 'eslintrc' // <--- (consider migrating to flat config if possible)
+    },
     config: {
       stylistic: {
         indent: 'tab',
