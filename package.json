@@ -22,7 +22,8 @@
     "@typescript-eslint/parser": "^6.0.0",
     "nuxt": "^3.12.3",
     "simple-icons": "^13.1.0",
-    "vue": "latest"
+    "vue": "latest",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.6",
