@@ -35,73 +35,88 @@ const fakeList = [
 				Projetos
 			</h1>
 		</div>
+
 		<div
 			v-for="(project, index) in fakeList"
 			:key="index"
 			class="w-full flex flex-col justify-center items-center mb-20"
 		>
-			<div class="relative mb-6">
+			<div class="mb-6">
 				<div>
-					<h2 class="w-full text-center text-2xl mb-4">
+					<h2
+						class="w-full text-center text-2xl mb-4
+					laptop:text-bold"
+					>
 						{{ project.name }}
 					</h2>
 				</div>
-				<div
-					class="border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[384px] h-[216px] rounded-xl shadow-lg"
-				>
-					<NuxtImg
-						class="w-full h-full"
-						format="svg"
-						quality="80"
-						:src="project.desktopImage"
-						loading="lazy"
-						fit="fill"
-					/>
-				</div>
-				<div
-					class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden w-[70px] h-[150px] rounded-xl shadow-lg"
-				>
-					<NuxtImg
-						class="w-full h-full"
-						format="svg"
-						quality="80"
-						:src="project.mobileImage"
-						loading="lazy"
-						fit="fill"
-					/>
-				</div>
-			</div>
-			<div class="w-full p-4">
-				<p class="mb-4 max-h-36 overflow-scroll">
-					{{ project.description }}
-				</p>
-
-				<div class="flex w-full justify-around items-center mb-8  gap-4 flex-wrap">
-					<span
-						v-for="(tech, indexChild) in project.technologies"
-						:key="indexChild"
-						class="font-bold text-purple-600 uppercase"
-					>{{ tech }}</span>
-				</div>
-				<ULink
-					class="w-full"
-					:to="project.siteURL"
-					target="_blank"
-				>
-					<UButton
-						label="VER PROJETO"
-						variant="solid"
-						color="green"
-						class="h-12 w-full flex justify-center items-center"
-					>
-						<template #trailing>
-							<UIcon
-								name="i-heroicons-arrow-right-20-solid"
-								class="w-5 h-5"
+				<div class="relative flex">
+					<div>
+						<div
+							class="border-[2px] border-solid border-customPrimary-400 overflow-hidden
+					w-[384px] h-[216px] rounded-xl shadow-lg
+					laptop:w-[584px] laptop:h-[316px]
+					"
+						>
+							<NuxtImg
+								class="w-full h-full"
+								format="svg"
+								quality="80"
+								:src="project.desktopImage"
+								loading="lazy"
+								fit="fill"
 							/>
-						</template>
-					</UButton>
-				</ULink>
+						</div>
+						<div
+							class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden
+						w-[70px] h-[150px] rounded-xl shadow-lg
+						laptop:w-[100px] laptop:h-[200px]
+						"
+						>
+							<NuxtImg
+								class="w-full h-full"
+								format="svg"
+								quality="80"
+								:src="project.mobileImage"
+								loading="lazy"
+								fit="fill"
+							/>
+						</div>
+					</div>
+					
+					<div class="w-full p-4">
+						<p class="mb-4 max-h-36 overflow-scroll">
+							{{ project.description }}
+						</p>
+
+						<div class="flex w-full justify-around items-center mb-8  gap-4 flex-wrap">
+							<span
+								v-for="(tech, indexChild) in project.technologies"
+								:key="indexChild"
+								class="font-bold text-purple-600 uppercase"
+							>{{ tech }}</span>
+						</div>
+						<ULink
+							class="w-full"
+							:to="project.siteURL"
+							target="_blank"
+						>
+							<UButton
+								label="VER PROJETO"
+								variant="solid"
+								color="green"
+								class="h-12 w-full flex justify-center items-center"
+							>
+								<template #trailing>
+									<UIcon
+										name="i-heroicons-arrow-right-20-solid"
+										class="w-5 h-5"
+									/>
+								</template>
+							</UButton>
+						</ULink>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
