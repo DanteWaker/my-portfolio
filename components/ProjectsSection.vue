@@ -83,7 +83,7 @@ const fakeList = [
 							/>
 						</div>
 					</div>
-					
+
 					<div class="w-full p-4">
 						<p class="mb-4 max-h-36 overflow-scroll">
 							{{ project.description }}
