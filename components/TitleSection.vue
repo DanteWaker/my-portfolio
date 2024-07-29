@@ -72,14 +72,10 @@
 					</div>
 				</div>
 				<div class="m-8 laptop:w-[60%] laptop:m-12">
-					<NuxtImg
+					<img
 						class="w-full h-full rounded-3xl"
-						format="svg"
-						quality="80"
 						src="https://devbydenner.s3.us-east-2.amazonaws.com/foto_perfil.png"
-						loading="lazy"
-						fit="fill"
-					/>
+					>
 				</div>
 			</div>
 			<div class=" flex flex-col justify-start items-center font-light p-8 tracking-widest">

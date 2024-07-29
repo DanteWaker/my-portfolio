@@ -21,6 +21,9 @@ export default defineNuxtConfig({
 		},
 	},
 	modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-icon', '@nuxt/fonts', '@nuxt/image'],
+	image: {
+		domains: ['devbydenner.s3.us-east-2.amazonaws.com'],
+	},
 	fonts: {
 		defaults: {
 			weights: [100, 200, 300, 400, 500, 600, 700, 800, 900, 950],
