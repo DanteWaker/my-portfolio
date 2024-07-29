@@ -19,14 +19,10 @@
 			<div
 				class="w-[20rem] h-[20rem] z-30 rounded-3xl overflow-hidden border-[1px] border-customPrimary-400 shadow-lg"
 			>
-				<NuxtImg
+				<img
 					class="w-full h-full"
-					format="svg"
-					quality="80"
-					src="/foto_perfil.png"
-					loading="lazy"
-					fit="fill"
-				/>
+					src="https://devbydenner.s3.us-east-2.amazonaws.com/foto_perfil.png"
+				>
 			</div>
 			<div
 				class="absolute -top-3 right-10 w-[20rem] h-[20rem] z-20 bg-customPrimary-400 rounded-3xl overflow-hidden border-[1px] border-customPrimary-400 shadow-lg"

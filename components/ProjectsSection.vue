@@ -11,16 +11,16 @@ useServerSeoMeta({
 const fakeList = [
 	{
 		name: 'Sua Formatura',
-		mobileImage: '/WebsitesImages/Suaformatura/SuaFormaturaDashboardMobile.png',
-		desktopImage: '/WebsitesImages/Suaformatura/SuaFormaturaDashboardDesktop.png',
+		mobileImage: 'https://devbydenner.s3.us-east-2.amazonaws.com/SuaFormatura/SuaFormaturaDashboardMobile.png',
+		desktopImage: 'https://devbydenner.s3.us-east-2.amazonaws.com/SuaFormatura/SuaFormaturaDashboardDesktop.png',
 		description: 'A Sua Formatura é o lugar ideal para organizar a sua formatura com segurança, praticidade e inteligência. Com o nosso aplicativo, você pode planejar cada evento conforme o desejo da sua turma, utilizando diversas estratégias para garantir a melhor formatura gastando menos. Arrecade dinheiro de forma segura e transparente, aceitando pagamentos via boleto, PIX ou cartão. Além disso, com a nossa Formatura Garantida, você tem a segurança de receber o seu dinheiro de volta em caso de qualquer problema. Organize a sua formatura com a Sua Formatura e faça desse momento uma experiência inesquecível.',
 		technologies: ['React', 'Material-UI', 'ImmutableJS', 'Redux', 'JavaScript'],
 		siteURL: 'https://suaformatura.com',
 	},
 	{
 		name: 'Calculadora das milhas',
-		mobileImage: '/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasMobile.png',
-		desktopImage: '/WebsitesImages/CalculadoraDasMilhas/CalculadoraDasMilhasDesktop.png',
+		mobileImage: 'https://devbydenner.s3.us-east-2.amazonaws.com/CalculadoraDasMilhas/CalculadoraDasMilhasMobile.png',
+		desktopImage: 'https://devbydenner.s3.us-east-2.amazonaws.com/CalculadoraDasMilhas/CalculadoraDasMilhasDesktop.png',
 		description: 'Calculadora de milhas aéreas simples feita para o gestor de milhas aéreas Caio Nascimento.',
 		technologies: ['NextJS', 'ReactJS', 'Tailwind', 'Zustand', 'Typescript'],
 		siteURL: 'https://calculadoradasmilhas.com',
@@ -58,14 +58,10 @@ const fakeList = [
 					laptop:w-[584px] laptop:h-[316px]
 					"
 						>
-							<NuxtImg
+							<img
 								class="w-full h-full"
-								format="svg"
-								quality="80"
 								:src="project.desktopImage"
-								loading="lazy"
-								fit="fill"
-							/>
+							>
 						</div>
 						<div
 							class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden
@@ -73,14 +69,10 @@ const fakeList = [
 						laptop:w-[100px] laptop:h-[200px]
 						"
 						>
-							<NuxtImg
+							<img
 								class="w-full h-full"
-								format="svg"
-								quality="80"
 								:src="project.mobileImage"
-								loading="lazy"
-								fit="fill"
-							/>
+							>
 						</div>
 					</div>
 
