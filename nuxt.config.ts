@@ -22,8 +22,9 @@ export default defineNuxtConfig({
 	},
 	modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-icon', '@nuxt/fonts', '@nuxt/image'],
 	image: {
-		provider: 'netlify',
-		domains: ['devbydenner.com'],
+		provider: process.env.NUXT_PROVIDER,
+		domains: ['devbydenner.com', 'https://devbydenner.com/',
+			'https://www.devbydenner.com/', 'localhost', 'http://localhost:3000/'],
 	},
 	fonts: {
 		defaults: {
