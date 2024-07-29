@@ -21,11 +21,6 @@ export default defineNuxtConfig({
 		},
 	},
 	modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-icon', '@nuxt/fonts', '@nuxt/image'],
-	image: {
-		provider: process.env.NUXT_PROVIDER,
-		domains: ['devbydenner.com', 'https://devbydenner.com/',
-			'https://www.devbydenner.com/', 'localhost', 'http://localhost:3000/'],
-	},
 	fonts: {
 		defaults: {
 			weights: [100, 200, 300, 400, 500, 600, 700, 800, 900, 950],

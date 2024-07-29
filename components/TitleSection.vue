@@ -76,7 +76,7 @@
 						class="w-full h-full rounded-3xl"
 						format="svg"
 						quality="80"
-						src="/foto_perfil.png"
+						src="https://devbydenner.s3.us-east-2.amazonaws.com/foto_perfil.png"
 						loading="lazy"
 						fit="fill"
 					/>
