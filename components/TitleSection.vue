@@ -1,33 +1,33 @@
 <script setup lang="ts">
-// type TWorkingIcon = {
-// 	name: string;
-// };
-// const workingIcons: TWorkingIcon[] = [
-// 	{ name: 'devicon:csharp' },
-// 	{ name: 'skill-icons:dotnet' },
-// 	{ name: 'skill-icons:react-dark' },
-// 	{ name: 'devicon:nextjs-wordmark' },
-// 	{ name: 'devicon:vuejs' },
-// 	{ name: 'devicon:nuxtjs' },
-// 	{ name: 'skill-icons:typescript' },
-// 	{ name: 'skill-icons:javascript' },
-// 	{ name: 'logos:nodejs-icon' },
-// 	{ name: 'skill-icons:sass' },
-// 	{ name: 'devicon:git' },
-// 	{ name: 'devicon:tailwindcss' },
-// 	{ name: 'logos:docker-icon' },
-// 	{ name: 'logos:material-ui' },
-// 	{ name: 'devicon:vscode' },
-// 	{ name: 'skill-icons:redux' },
-// 	{ name: 'devicon:html5-wordmark' },
-// 	{ name: 'logos:css-3' },
-// 	{ name: 'devicon:bitbucket-wordmark' },
-// 	{ name: 'devicon:nestjs' },
-// 	{ name: 'devicon:mysql-wordmark' },
-// 	{ name: 'devicon:postgresql-wordmark' },
-// 	{ name: 'devicon:mongodb-wordmark' },
-// 	{ name: 'devicon:swagger' },
-// ];
+type TWorkingIcon = {
+	name: string;
+};
+const workingIcons: TWorkingIcon[] = [
+	{ name: 'devicon:csharp' },
+	{ name: 'skill-icons:dotnet' },
+	{ name: 'skill-icons:react-dark' },
+	{ name: 'devicon:nextjs-wordmark' },
+	{ name: 'devicon:vuejs' },
+	{ name: 'devicon:nuxtjs' },
+	{ name: 'skill-icons:typescript' },
+	{ name: 'skill-icons:javascript' },
+	{ name: 'logos:nodejs-icon' },
+	{ name: 'skill-icons:sass' },
+	{ name: 'devicon:git' },
+	{ name: 'devicon:tailwindcss' },
+	{ name: 'logos:docker-icon' },
+	{ name: 'logos:material-ui' },
+	{ name: 'devicon:vscode' },
+	{ name: 'skill-icons:redux' },
+	{ name: 'devicon:html5-wordmark' },
+	{ name: 'logos:css-3' },
+	{ name: 'devicon:bitbucket-wordmark' },
+	{ name: 'devicon:nestjs' },
+	{ name: 'devicon:mysql-wordmark' },
+	{ name: 'devicon:postgresql-wordmark' },
+	{ name: 'devicon:mongodb-wordmark' },
+	{ name: 'devicon:swagger' },
+];
 </script>
 
 <template>
@@ -54,19 +54,36 @@
 								class="space-x-2 w-full h-[3rem] flex flex-col justify-start items-center
 							laptop:flex-row laptop:gap-12"
 							>
-								<ButtonIcon
-									icon="bi:github"
-									text="Github"
-								/>
-
-								<ButtonIcon
-									icon="bi:linkedin"
-									text="Linkedin"
-								/>
-								<ButtonIcon
-									icon="pepicons-pop:file"
-									text="Currículo"
-								/>
+								<ULink
+									class="w-full"
+									to="https://github.com/DanteWaker"
+									target="_blank"
+								>
+									<ButtonIcon
+										icon="bi:github"
+										text="Github"
+									/>
+								</ULink>
+								<ULink
+									class="w-full"
+									to="https://www.linkedin.com/in/josedenner/"
+									target="_blank"
+								>
+									<ButtonIcon
+										icon="bi:linkedin"
+										text="Linkedin"
+									/>
+								</ULink>
+								<ULink
+									class="w-full"
+									to="https://devbydenner.s3.us-east-2.amazonaws.com/Denner+-+Curriculo+Desenvolvedor.pdf"
+									target="_blank"
+								>
+									<ButtonIcon
+										icon="pepicons-pop:file"
+										text="Currículo"
+									/>
+								</ULink>
 							</ul>
 						</div>
 					</div>
@@ -85,7 +102,7 @@
 				<div class="w-[1px] h-6 bg-customPrimary-400/50 mt-3 animate-bounce" />
 			</div>
 		</section>
-		<!-- <section
+		<section
 			id="tools"
 			class="flex w-full"
 		>
@@ -113,6 +130,6 @@
 					/>
 				</div>
 			</div>
-		</section> -->
+		</section>
 	</section>
 </template>

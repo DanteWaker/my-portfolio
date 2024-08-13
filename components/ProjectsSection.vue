@@ -29,8 +29,8 @@ const fakeList = [
 </script>
 
 <template>
-	<section class="my-16 w-full flex flex-col justify-center items-center">
-		<div class="flex justify-center items-center mb-12">
+	<section class="my-16 w-full flex flex-col justify-center items-center gap-4">
+		<div class="flex justify-center items-center">
 			<h1 class="text-4xl font-bold">
 				Projetos
 			</h1>
@@ -39,19 +39,19 @@ const fakeList = [
 		<div
 			v-for="(project, index) in fakeList"
 			:key="index"
-			class="w-full flex flex-col justify-center items-center mb-20"
+			class="w-full flex flex-col justify-center items-center mb-8 laptop:max-w-[60%]"
 		>
-			<div class="mb-6">
-				<div>
+			<div class="mb-6 h-full">
+				<div class="w-full mb-12">
 					<h2
-						class="w-full text-center text-2xl mb-4
+						class="w-full text-center text-2xl
 					laptop:text-bold"
 					>
 						{{ project.name }}
 					</h2>
 				</div>
-				<div class="relative flex">
-					<div>
+				<div class="relative flex flex-col gap-10 h-full justify-center items-center">
+					<div class="relative">
 						<div
 							class="border-[2px] border-solid border-customPrimary-400 overflow-hidden
 					w-[384px] h-[216px] rounded-xl shadow-lg
@@ -64,7 +64,7 @@ const fakeList = [
 							>
 						</div>
 						<div
-							class="absolute -bottom-6 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden
+							class="absolute -bottom-8 left-2 border-[2px] border-solid border-customPrimary-400 overflow-hidden
 						w-[70px] h-[150px] rounded-xl shadow-lg
 						laptop:w-[100px] laptop:h-[200px]
 						"
@@ -76,8 +76,8 @@ const fakeList = [
 						</div>
 					</div>
 
-					<div class="w-full p-4">
-						<p class="mb-4 max-h-36 overflow-scroll">
+					<div class="w-full h-full p-4 flex flex-col justify-between">
+						<p class="mb-4 max-h-36 overflow-y-auto">
 							{{ project.description }}
 						</p>
 
@@ -96,8 +96,7 @@ const fakeList = [
 							<UButton
 								label="VER PROJETO"
 								variant="solid"
-								color="green"
-								class="h-12 w-full flex justify-center items-center"
+								class="h-12 w-full flex justify-center items-center text-customPrimary-400 bg-inherit border-2 border-customPrimary-400"
 							>
 								<template #trailing>
 									<UIcon
