@@ -23,7 +23,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 </script>
 
 <template>
-	<section class="my-16">
+	<section
+		class="my-16"
+	>
 		<div class="h-[1px] bg-customPrimary-400/30 m-8" />
 		<div class="my-24">
 			<h1 class="text-4xl font-bold text-center mb-4">

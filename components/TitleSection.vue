@@ -31,7 +31,7 @@ const workingIcons: TWorkingIcon[] = [
 </script>
 
 <template>
-	<section class="flex flex-col">
+	<section id="home" class="flex flex-col">
 		<section class="mt-20">
 			<div
 				class="flex justify-around items-center flex-col-reverse font-semibold p-4 pb-36 mb-16

@@ -1,5 +1,8 @@
 <template>
-	<section class="mt-32 flex gap-8 flex-col justify-center items-center bg-customBackground-500 p-8">
+	<section
+		id="about"
+		class="mt-32 flex gap-8 flex-col justify-center items-center bg-customBackground-500 p-8"
+	>
 		<h1 class="text-4xl font-bold text-center mb-4">
 			Sobre
 		</h1>

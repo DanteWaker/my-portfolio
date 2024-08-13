@@ -10,11 +10,11 @@ useServerSeoMeta({
 </script>
 
 <template>
-	<main class="bg-customBackground-400 text-customPrimary-400 overflow-hidden flex flex-col items-center">
+	<main class="bg-customBackground-400 text-customPrimary-400 overflow-hidden flex flex-col items-center scroll-smooth">
 		<Header />
 		<section
 			id="title-section"
-			class="relative w-full flex flex-col max-w-[1280px]"
+			class="relative w-full flex flex-col max-w-[1280px] scroll-smooth"
 		>
 			<TitleSection />
 

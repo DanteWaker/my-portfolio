@@ -29,7 +29,10 @@ const fakeList = [
 </script>
 
 <template>
-	<section class="my-16 w-full flex flex-col justify-center items-center gap-4">
+	<section
+		id="projects"
+		class="my-16 w-full flex flex-col justify-center items-center gap-4"
+	>
 		<div class="flex justify-center items-center">
 			<h1 class="text-4xl font-bold">
 				Projetos
