@@ -106,7 +106,18 @@ const workingIcons: TWorkingIcon[] = [
 			id="tools"
 			class="flex w-full"
 		>
-			<div class="flex  animate-spin-slow shrink-0 select-none">
+			<div class="flex animate-spin-slow shrink-0 select-none">
+				<div
+					v-for="(item, index) in workingIcons"
+					:key="index"
+					class="h-[3rem] w-[3rem] mx-4"
+				>
+					<Icon
+						:name="item.name"
+						class="h-full w-full"
+						color="black"
+					/>
+				</div>
 				<div
 					v-for="(item, index) in workingIcons"
 					:key="index"

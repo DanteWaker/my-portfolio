@@ -23,7 +23,8 @@ export default <Partial<Config>>{
 			},
 			keyframes: {
 				scroll: {
-					'100%': { transform: 'translateX(-50%)' },
+					'0%, 100%': { transform: 'translateX(-33%)' },
+					'50%': { transform: 'translateX(-66%)' },
 				},
 			},
 			colors: {
