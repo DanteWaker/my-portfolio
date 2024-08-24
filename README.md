@@ -13,7 +13,7 @@ This site was built using Nuxt.js, TypeScript, and Tailwind CSS to provide a fas
 
 ## Stack
 
-**Front-end:** React, Redux, TailwindCSS, Shadcn
+**Front-end:** Nuxtjs, Vuejs, TailwindCSS, Typescript, simple-icons, Shadcn-vue
 
 - Back-end will be developed, to change and add more projetc without edit code
 
